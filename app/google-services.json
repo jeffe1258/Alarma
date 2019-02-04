@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "82617598512",
+    "firebase_url": "https://alert-78148.firebaseio.com",
+    "project_id": "alert-78148",
+    "storage_bucket": "alert-78148.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:82617598512:android:0676a23683a651e8",
+        "android_client_info": {
+          "package_name": "teamawesome.alertme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "82617598512-cfo3hmp24hcl26g1sbpejhp3lvn1v2h4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKN1v429nYCjlGtvmU4reMkBHhwPwLCU4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="teamawesome.alertme" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name=".AlertMeApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Splash"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AlarmList"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_alarm_list"
+            android:parentActivityName=".SplashActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="teamawesome.alertme.SplashActivity" />
+        </activity>
+        <activity
+            android:name=".Conditions"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_conditions"
+            android:parentActivityName=".AlarmList"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="teamawesome.alertme.AlarmList" />
+        </activity>
+        <activity
+            android:name=".TimeFrame"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_time_frame"
+            android:parentActivityName=".Conditions"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="teamawesome.alertme.Conditions" />
+        </activity>
+
+        <receiver
+            android:name=".Background.AlarmBroadcastReceiver"
+            android:process=":remote" />
+        <receiver
+            android:name=".Background.WeatherCheckerBroadcastReceiver"
+            android:process=":remote" />
+        <receiver
+            android:name=".Background.BootBroadcastReceiver"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".PopupAlarm"
+            android:label="@string/title_activity_popup_alarm"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".AlarmEdit"
+            android:label="@string/title_activity_alarm_edit"
+            android:parentActivityName=".AlarmList"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="teamawesome.alertme.AlarmList" />
+
+        </activity>
+        <activity  android:name=".DatosLogin"
+            android:theme="@style/Applay"></activity>
+        <activity  android:name=".Login"
+            android:theme="@style/Applay"></activity>
+        <activity  android:name=".SplashActivity"></activity>
+    </application>
+
+</manifest>

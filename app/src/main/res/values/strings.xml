@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="app_name">Clima</string>
+    <string name="hello_world">Hola Mundo!</string>
+    <string name="action_settings">Configuraciones</string>
+    <string name="title_activity_alarm_list">AlarmList</string>
+    <string name="title_activity_conditions">Conditiones</string>
+    <string name="title_activity_time_frame">Periodo de tiempo</string>
+    <string name="precipitation">Precipitación</string>
+    <string name="wind_speed">Velocidad del viento</string>
+    <string name="temperature">Temperatura</string>
+    <string name="comfort_temp">Temperatura de confort</string>
+    <string name="deg_f">°F</string>
+    <string name="deg_c">°C</string>
+    <string name="percent_chance">% Cambiar</string>
+    <string name="mph">mph</string>
+    <string name="kph">kph</string>
+    <string name="conditions_submit">Siguiente</string>
+    <string name="time_frame_check">Comprobar por</string>
+    <string name="time_frame_week">Día laborable</string>
+    <string name="time_frame_weekend">Fin de semana</string>
+    <string name="time_frame_submit">Guardar</string>
+    <string name="time_frame">Periodo de tiempo</string>
+    <string name="full_day">24-houras</string>
+    <string name="half_day">12-houras</string>
+    <string name="alert_time">Tiempo de alerta</string>
+    <string name="am">AM</string>
+    <string name="pm">PM</string>
+    <string name="sound">Sonido</string>
+    <string name="vibrate">Vibrar</string>
+    <string name="time_frame_toggle">Off/On</string>
+    <string name="alarm_name_1">Ejemplo</string>
+    <string name="alarm_name_2">Set Time</string>
+    <string name="edit_time_frame">Editar marco de tiempo</string>
+    <string name="title_activity_popup_alarm">PopupAlarm</string>
+    <string name="title_activity_alarm_edit">Edit</string>
+
+</resources>
